@@ -1,5 +1,6 @@
 <?php
-
+echo "<h1>Olá Mundo v1.0</h1> ";
+echo $_SERVER['SERVER_ADDR']
 /**
  * Laravel - A PHP Framework For Web Artisans
  *
