@@ -51,7 +51,6 @@
     },
     "spec": {
       "host": "${APPLICATION_DOMAIN}",
-      "path": "/public/index.php",
       "to": {
         "kind": "Service",
         "name": "${NAME}"
@@ -158,14 +157,6 @@
             "ports": [{
               "containerPort": 8080
             }],
-            "readinessProbe": {
-              "timeoutSeconds": 3,
-              "initialDelaySeconds": 3,
-              "httpGet": {
-                "path": "/public/index.php",
-                "port": 8080
-              }
-            },
             "livenessProbe": {
               "timeoutSeconds": 3,
               "initialDelaySeconds": 30,
