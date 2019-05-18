@@ -124,20 +124,6 @@
       }
     },
     "spec": {
-      "strategy": {
-        "type": "Recreate",
-        "recreateParams": {
-          "pre": {
-            "failurePolicy": "Retry",
-            "execNewPod": {
-              "command": [
-                "./migrate-database.sh"
-              ],
-              "containerName": "laravel"
-            }
-          }
-        }
-      },
       "triggers": [{
         "type": "ImageChange",
         "imageChangeParams": {
@@ -175,7 +161,7 @@
               "timeoutSeconds": 3,
               "initialDelaySeconds": 3,
               "httpGet": {
-                "path": "/health.php",
+                "path": "/healthnodb.php",
                 "port": 8080
               }
             },
