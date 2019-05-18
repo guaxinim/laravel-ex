@@ -51,6 +51,7 @@
     },
     "spec": {
       "host": "${APPLICATION_DOMAIN}",
+      "path": "/public/index.php",
       "to": {
         "kind": "Service",
         "name": "${NAME}"
