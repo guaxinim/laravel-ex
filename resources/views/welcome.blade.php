@@ -38,7 +38,7 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">$_SERVER['SERVER_ADDR'] versao 1.0</div>
+                <div class="title">Request::ip(); versao 1.0</div>
             </div>
         </div>
     </body>
